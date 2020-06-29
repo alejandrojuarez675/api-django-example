@@ -1,6 +1,9 @@
+"""
+Here you have to register the diferents models of your app
+"""
+
 from django.contrib import admin
 from .models import Continent, Country
 
-# Register your models here.
-admin.site.register(Country)
-admin.site.register(Continent)
+
+admin.site.register([Country, Continent])
