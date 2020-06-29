@@ -19,8 +19,8 @@ from rest_framework.routers import DefaultRouter
 from countries.views import ContinentViewSet, CountryViewSet
 
 router = DefaultRouter()
-router.register(r'continents', ContinentViewSet)
-router.register(r'countries', CountryViewSet)
+router.register(r'api/continents', ContinentViewSet)
+router.register(r'api/countries', CountryViewSet)
 
 urlpatterns = router.urls
 
